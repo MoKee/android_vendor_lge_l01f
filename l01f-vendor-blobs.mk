@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The MoKee OpenSource Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -71,8 +71,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/l01f/proprietary/lib/libHDR.so:system/lib/libHDR.so \
     vendor/lge/l01f/proprietary/lib/libmorpho_noise_reduction.so:system/lib/libmorpho_noise_reduction.so \
     vendor/lge/l01f/proprietary/lib/libmorpho_image_stab31.so:system/lib/libmorpho_image_stab31.so \
+    vendor/lge/l01f/proprietary/lib/libmorpho_panorama_wa_4.so:system/lib/libmorpho_panorama_wa_4.so \
+    vendor/lge/l01f/proprietary/lib/libmorpho_panorama_wa_viewer.so:system/lib/libmorpho_panorama_wa_viewer.so \
+    vendor/lge/l01f/proprietary/lib/libmorpho_sensor_fusion_4.so:system/lib/libmorpho_sensor_fusion_4.so \
+    vendor/lge/l01f/proprietary/lib/libmorphoimageconverter_4.so:system/lib/libmorphoimageconverter_4.so \
     vendor/lge/l01f/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/lge/l01f/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/lge/l01f/proprietary/lib/libnfc_ndef.so:system/lib/libnfc_ndef.so \
+    vendor/lge/l01f/proprietary/lib/libnfc_ndef_sony.so:system/lib/libnfc_ndef_sony.so \
+    vendor/lge/l01f/proprietary/lib/libnfc_sony.so:system/lib/libnfc_sony.so \
     vendor/lge/l01f/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/lge/l01f/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lge/l01f/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -146,7 +153,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/l01f/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
     vendor/lge/l01f/proprietary/vendor/lib/liblisten.so:system/vendor/lib/liblisten.so \
     vendor/lge/l01f/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
-    vendor/lge/l01f/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/lge/l01f/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/lge/l01f/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/lge/l01f/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -263,20 +269,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/l01f/proprietary/vendor/firmware/BCM20791B5_002.006.013.0011.0027_LGE_A1_PreI2C_NCD_Signed_ORC.ncd:system/vendor/firmware/BCM20791B5_002.006.013.0011.0027_LGE_A1_PreI2C_NCD_Signed_ORC.ncd \
     vendor/lge/l01f/proprietary/vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd:system/vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd \
     vendor/lge/l01f/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
-    vendor/lge/l01f/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw
-
-# Include known-good ADSP to prevent compatibility issues for users with bad firmware images
-PRODUCT_COPY_FILES += \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b00:system/vendor/firmware/adsp.b00 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b01:system/vendor/firmware/adsp.b01 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b02:system/vendor/firmware/adsp.b02 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b03:system/vendor/firmware/adsp.b03 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b04:system/vendor/firmware/adsp.b04 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b05:system/vendor/firmware/adsp.b05 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b06:system/vendor/firmware/adsp.b06 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b08:system/vendor/firmware/adsp.b08 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b09:system/vendor/firmware/adsp.b09 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b10:system/vendor/firmware/adsp.b10 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b11:system/vendor/firmware/adsp.b11 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.b12:system/vendor/firmware/adsp.b12 \
-    vendor/lge/l01f/proprietary/vendor/firmware/adsp.mdt:system/vendor/firmware/adsp.mdt
+    vendor/lge/l01f/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw\
+    vendor/lge/l01f/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+    vendor/lge/l01f/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so
